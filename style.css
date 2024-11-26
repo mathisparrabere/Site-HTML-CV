@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+*{
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    scroll-behavior: smooth;
+    animation: fadein 1s;
+}
+
+header{
+    display:flex;
+    background-color:black;
+    justify-content: space-around;
+}
+
+nav ul{
+    display:flex;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+}
+
+h4{
+    color:#ff6cce;
+}
+
+.menu_header{
+    list-style: none;
+    color:pink;
+    display:flex;
+    padding:20px;
+}
+
+.menu_header:hover{
+    color:white;
+}
+
+body{
+    width:100%;
+    margin:0;
+}
+
+#main_container{
+    justify-content:space-around;
+}
+
+#photo_profil{
+    width:150px;
+    border-radius:50%;
+    border: 5px white solid;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#photo_profil:hover{
+    transform:rotate(5deg);
+}
+
+#accueil{
+    background-image:url(./images/background\ nature.jfif);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding:5%;
+}
+
+.titre_accueil{
+    color:white;
+}
+
+.reseaux{
+    display:flex;
+    gap:15%;
+}
+
+.logo_reseaux{
+    width: 65px;
+}
+
+.annee{
+    display:flex;
+    gap:60px;
+}
+
+.annee:hover{
+    transform: scale(104%);
+    transition-duration: 1s;
+}
+
+.annee:not(:hover){
+    transform: scale(100%);
+    transition-duration: 1s;
+}
+
+#education_et_experiences{
+    display:flex;
+    justify-content: space-around;
+    gap:100px;
+}
+
+#tout_sauf_accueil{
+    padding:20px;
+}
+
+#presentation{
+    text-align:center;
+}
+
+#info_perso{
+    background-color: pink;
+    width:15%;
+}
+
+#info_perso:hover{
+    transform:rotate(5deg);
+    transition-duration:0.5s;
+}
+
+#info_perso:not(:hover){
+    transform:rotate(0deg);
+    transition-duration:0.5s;
+}
+
+#skills{
+    display: flex;
+    padding:30px;
+    justify-content: space-around;
+}
+
+ul{
+    list-style-type: none;
+}
+
+footer{
+    background-color:black;
+    color:white;
+    display: flex;
+    padding:20px;
+    justify-content: space-around;
+}
+
+i{
+    color:white;
+    font-size: 150%;
+}
+
+i:hover{
+    color:#ff6cce;
+}
+
+@media all and (max-width:768px) {
+    #main_container{
+        width: 100%;
+        display:block;
+    }
+
+    #education_et_experiences{
+        display:block;
+    }
+
+    #skills{
+        display:block;
+    }
+
+    #info_perso{
+        width:50%;
+    }
+
+    annee{
+        display:block;
+    }
+}
+
+@media all and (max-width:614px) {
+    nav ul{
+        display:block;
+    }
+}
